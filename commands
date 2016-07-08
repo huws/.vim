@@ -18,6 +18,9 @@ i - insert
 I - insert at start of line
 a - append
 A - append at end of line
+C - change to end of line
+s - substitute from where you are to the next noun
+S - substitute the entire line
 o - open line
 O - open line above
 0 - go to start of line
@@ -30,6 +33,7 @@ l - right
 ; - go to next match (of 'f' or 't' commands)
 , - go to previous match (of 'f' or 't' commands)
 D - delete to end of line
+J - Join the current line with the next one 
 H - move to top of screen
 M - move to middle of screen
 L - move to bottom of screen
@@ -41,6 +45,12 @@ Ctrl-o - go backwards through location history
 Ctrl-i - go forwards through location history
 Ctrl-E - scroll up (cursor unaffected)
 Ctrl-Y - scroll down (cursor unaffected)
+u - undo last action
+Ctrl-r redo last action
+y - yank selection
+yy - yank current line
+p - paste copied/deleted text after cursor
+P - paste copied/deleted text before cursor
 
 Verbs
 =====
@@ -69,6 +79,10 @@ w - word
 t - tag
 b - block
 
+More advanced
+=============
+gqap - Re-format around paragraph
+dap - Delete around paragraph
 
 References
 ==========
