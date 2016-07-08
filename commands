@@ -1,0 +1,77 @@
+===================================
+# List of commands for using VIM  #
+===================================
+
+b - go to beginning of word
+B - go to beginning of big word (ignore hyphens, etc.)
+e - go to end of word
+E - go to end of word big word (ignore hyphens, etc.)
+w - go to start of next word
+W - go to start of next big word (ignore hyphens, etc.)
+.  - repeat last command
+v - enter visual mode (character)
+V - enter visual mode (line)
+Ctrl-V - enter visual mode (block)
+gg - goto top of file
+G - goto end of file
+i - insert
+I - insert at start of line
+a - append
+A - append at end of line
+o - open line
+O - open line above
+0 - go to start of line
+$ - go to end of line
+^ - go to first non-blank character on line
+j - down
+k - up
+h - left
+l - right
+; - go to next match (of 'f' or 't' commands)
+, - go to previous match (of 'f' or 't' commands)
+D - delete to end of line
+H - move to top of screen
+M - move to middle of screen
+L - move to bottom of screen
+Ctrl-U - move up half a screen
+Ctrl-D - move down half a screen
+Ctrl-F - page down (forward)
+Ctrl-B - page up (backward)
+Ctrl-o - go backwards through location history
+Ctrl-i - go forwards through location history
+Ctrl-E - scroll up (cursor unaffected)
+Ctrl-Y - scroll down (cursor unaffected)
+
+Verbs
+=====
+d - delete
+c - change
+y - yank
+v - enter visual mode (character)
+V - enter visual mode (line)
+
+Modifiers
+=========
+i - inside
+a - around
+[digit] - number of times
+t - searches for something and stops before it
+f - searches for something and stops on it
+/ - find a string
+
+Nouns
+=====
+w - word
+) - forward sentence
+( - backwards sentence
+} - forward paragraph
+{ - backwards paragraph
+t - tag
+b - block
+
+
+References
+==========
+Very basic interactive vim tutorial:  http://www.openvim.com/
+Good vim tutorial:  https://danielmiessler.com/study/vim/
+
