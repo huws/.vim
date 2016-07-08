@@ -1,8 +1,9 @@
 " Use custom colour scheme
 colorscheme hjs
 
-" Use jj as an alternative to Escape to exit insert mode 
+" Use jj and jk  as an alternative to Escape to exit insert mode 
 inoremap jj <ESC>
+inoremap jk <ESC>
 
 " Use Space as an alternative to \ for the leader key
 let mapleader = "\<Space>"
