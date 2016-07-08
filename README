@@ -1,0 +1,12 @@
+Installing these vim setting is currently manual.  Steps required:
+  sudo apt-get install git
+  sudo apt-get install vim
+  cd ~
+  git clone https://github.com/huws/.vim.git
+  echo "source ~/.vim/bashrc" >> ~/.bashrc
+
+
+Things that will be required in future:
+  sudo apt-get install ctags
+  @@@ set up the .ctags file
+
