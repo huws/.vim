@@ -5,6 +5,16 @@ colorscheme hjs
 inoremap jj <ESC>
 inoremap jk <ESC>
 
+" Turn off those pesky cursor keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
 " Use Space as an alternative to \ for the leader key
 let mapleader = "\<Space>"
 
@@ -16,4 +26,9 @@ syntax on
 
 " Use UTF-8 encoding
 set encoding=utf-8
+
+" Set sane tab behaviour
+set tabstop=4
+set shiftwidth=4
+set expandtab
 

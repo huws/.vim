@@ -83,6 +83,8 @@ More advanced
 =============
 gqap - Re-format around paragraph
 dap - Delete around paragraph
+dt" - Delete from cursor position to just before the next double quote
+df" - Delete from cursor position to just after the next double quote
 
 References
 ==========
