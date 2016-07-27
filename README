@@ -5,8 +5,13 @@ Installing these vim setting is currently manual.  Steps required:
   git clone https://github.com/huws/.vim.git
   echo "source ~/.vim/bashrc" >> ~/.bashrc
 
-
-Things that will be required in future:
+Set up ctags:
   sudo apt-get install ctags
-  @@@ set up the .ctags file
+  cd <project directory>
+  ctags --recurse --exclude=.git
 
+Set up cscope (INCOMPLETE!):
+  sudo apt-get install cscope
+  cscope -Rb
+  vim
+    :cs add cscope.out  (THIS NEEDS TO BE MOVED TO CONFIG SOMEHOW, AS IT NEEDS TO BE RUN EVERY TIME)

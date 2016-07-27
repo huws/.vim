@@ -28,3 +28,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Set up a line-length ruler at 79 characters
+:set colorcolumn=79
+
+" Search up throught the parent directories until we find a tags file
+set tags=tags;/
