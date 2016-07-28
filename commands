@@ -88,11 +88,17 @@ dap - Delete around paragraph
 dt" - Delete from cursor position to just before the next double quote
 df" - Delete from cursor position to just after the next double quote
 
+<C-a> - add one to the next number
+<C-x> - subtract one from the next number
+<value><C-a> - add value to the next number
+<value><C-x> - subtract value to the next number
+
 Ex commands
 ===========
 :retab - convert current file to configured tab settings (includes converting tabs to spaces)
 
---Tabbed editing--
+Tabbed editing
+==============
 :tabnext - move to next tab
 :tabprevious - move to previous tab
 :tabfirst - go to first tab
@@ -101,6 +107,10 @@ Ex commands
 :tabedit <filename> - open a file in a new tab
 :tabnew - open a new empty tab
 :tabs - list open tabs
+gt - next tab
+gT - previous tab
+{N}gt - go to tab N
+<C-w>T - pull current window into new tab
 
 References
 ==========
