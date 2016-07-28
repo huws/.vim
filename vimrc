@@ -1,5 +1,5 @@
 " Use custom colour scheme
-colorscheme hjs
+colorscheme elflord
 
 " Use jj and jk  as an alternative to Escape to exit insert mode 
 inoremap jj <ESC>
@@ -10,6 +10,10 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
 
 " Use Space as an alternative to \ for the leader key
 let mapleader = "\<Space>"
