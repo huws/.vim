@@ -66,7 +66,9 @@ i - inside
 a - around
 [digit] - number of times
 t - searches for something and stops before it
+T - reverse of t
 f - searches for something and stops on it
+F - reverse of f
 / - find a string
 
 Nouns
@@ -85,6 +87,20 @@ gqap - Re-format around paragraph
 dap - Delete around paragraph
 dt" - Delete from cursor position to just before the next double quote
 df" - Delete from cursor position to just after the next double quote
+
+Ex commands
+===========
+:retab - convert current file to configured tab settings (includes converting tabs to spaces)
+
+--Tabbed editing--
+:tabnext - move to next tab
+:tabprevious - move to previous tab
+:tabfirst - go to first tab
+:tablast - go to last tab
+:tabclose - close the current tab
+:tabedit <filename> - open a file in a new tab
+:tabnew - open a new empty tab
+:tabs - list open tabs
 
 References
 ==========
