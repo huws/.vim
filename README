@@ -1,20 +1,31 @@
-Installing these vim setting is currently manual.  Steps required:
-  sudo apt-get install git
-  sudo apt-get install vim
+Install
+=======
+These vim settings can be installed by running:
+  sudo apt-get install -y git
   cd ~
-  git clone https://github.com/huws/.vim.git
-  echo "source ~/.vim/bashrc" >> ~/.bashrc
-  git clone https://github.com/gmarik/vundle.gi ~/.vim/bundle/vundle
+  git clone https://github.com/huws/.vim
+  .vim/install.sh
+
+  git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
   vim <then> :BundleInstall
   <exit> vim
 
-Set up ctags:
-  sudo apt-get install ctags
+Set up ctags
+============
+Set up ctags by running:
   cd <project directory>
   ctags --recurse --exclude=.git
 
+
+
+
+
+
+Other
+=====
 Set up cscope (INCOMPLETE!):
   sudo apt-get install cscope
   cscope -Rb
   vim
     :cs add cscope.out  (THIS NEEDS TO BE MOVED TO CONFIG SOMEHOW, AS IT NEEDS TO BE RUN EVERY TIME)
+
