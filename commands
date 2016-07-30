@@ -51,6 +51,7 @@ y - yank selection
 yy - yank current line
 p - paste copied/deleted text after cursor
 P - paste copied/deleted text before cursor
+== - correct indentation
 
 Verbs
 =====
@@ -111,6 +112,16 @@ gt - next tab
 gT - previous tab
 {N}gt - go to tab N
 <C-w>T - pull current window into new tab
+
+Surround plugin
+===============
+cs"' - replace the surrounding double quotes with single quotes
+
+Commentary plugin
+=================
+gcc - toggle line commenting
+gcG - toggle commenting until end of file
+gcj - toggle commenting on this line and the next
 
 References
 ==========

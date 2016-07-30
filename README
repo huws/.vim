@@ -6,7 +6,6 @@ These vim settings can be installed by running:
   git clone https://github.com/huws/.vim
   .vim/install.sh
 
-  git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
   vim <then> :BundleInstall
   <exit> vim
 

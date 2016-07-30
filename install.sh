@@ -30,5 +30,8 @@ else
   echo "Already updated .bashrc"
 fi
 
+# Install vundle
+git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+
 echo "DONE!"
 
