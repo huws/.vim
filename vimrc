@@ -1,3 +1,18 @@
+" vundle settings need to come first
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Load some vundle bundles
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-commentary'
+"Bundle 'kana/vim-textobj-entire'  " Doesn't work for some reason
+
+" Now that vundle is loaded, we can go back to normal
+filetype on
+
 " Use custom colour scheme
 colorscheme hjs
 

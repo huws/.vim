@@ -4,6 +4,9 @@ Installing these vim setting is currently manual.  Steps required:
   cd ~
   git clone https://github.com/huws/.vim.git
   echo "source ~/.vim/bashrc" >> ~/.bashrc
+  git clone https://github.com/gmarik/vundle.gi ~/.vim/bundle/vundle
+  vim <then> :BundleInstall
+  <exit> vim
 
 Set up ctags:
   sudo apt-get install ctags
