@@ -31,6 +31,7 @@ else
 fi
 
 # Install vundle
+echo "Installing vundle..."
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 
 echo "DONE!"
