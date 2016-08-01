@@ -51,7 +51,7 @@ y - yank selection
 yy - yank current line
 p - paste copied/deleted text after cursor
 P - paste copied/deleted text before cursor
-== - correct indentation
+== - correct indentation of current line
 
 Verbs
 =====
@@ -81,6 +81,10 @@ w - word
 { - backwards paragraph
 t - tag
 b - block
+
+Visual mode
+===========
+o - go to other end of visual selection
 
 More advanced
 =============
@@ -113,15 +117,20 @@ gT - previous tab
 {N}gt - go to tab N
 <C-w>T - pull current window into new tab
 
-Surround plugin
-===============
+vim-surround plugin
+===================
 cs"' - replace the surrounding double quotes with single quotes
 
-Commentary plugin
-=================
+vim-commentary plugin
+=====================
 gcc - toggle line commenting
 gcG - toggle commenting until end of file
 gcj - toggle commenting on this line and the next
+
+vim-textobj-entire plugin
+=========================
+=ae - correct indentation of entire file
+gcae - toggle commenting on entire file
 
 References
 ==========
