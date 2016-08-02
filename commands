@@ -101,6 +101,13 @@ df" - Delete from cursor position to just after the next double quote
 Ex commands
 ===========
 :retab - convert current file to configured tab settings (includes converting tabs to spaces)
+:!<cmd> - run a command from within vim
+:r <filename> - read the contents of a file into the buffer at the current location
+:r !<cmd> - run a shell command and read its output into the buffer at the current location
+:w - save file
+:w <filename> - save a copy of the file to the specified name (keep editing original)
+:wq - save and exit (aka ZZ)
+:q! - exit without saving
 
 Tabbed editing
 ==============
@@ -131,6 +138,11 @@ vim-textobj-entire plugin
 =========================
 =ae - correct indentation of entire file
 gcae - toggle commenting on entire file
+
+vimrc leader key mappings
+=========================
+<Leader>i - toggle ignore case
+<Leader>h - remove highlighting
 
 References
 ==========

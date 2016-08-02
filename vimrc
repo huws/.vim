@@ -14,6 +14,9 @@ Bundle 'kana/vim-textobj-entire'
 " Now that vundle is loaded, we can go back to normal
 filetype on
 
+" Install all the bundles using the command below
+" BundleInstall
+
 " Use custom colour scheme
 colorscheme elflord
 
@@ -51,8 +54,19 @@ set expandtab
 " Set up a line-length ruler at 79 characters
 :set colorcolumn=79
 
+" Turn ignore case on/off
+" set ic
+" set noic
+
+" Use search highlighting and incremental search
+set hls is
+
+" Map the command for removing search highlighting
+nnoremap <Leader>h :nohlsearch<CR>
+
+" Map the command for toggling ignore case (and printing current setting)
+nnoremap <Leader>i :set ic! ic?<CR>
+
 " Search up throught the parent directories until we find a tags file
 set tags=tags;/
 
-" Install all the bundles using the command below
-" BundleInstall
