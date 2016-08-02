@@ -106,8 +106,11 @@ Ex commands
 :r !<cmd> - run a shell command and read its output into the buffer at the current location
 :w - save file
 :w <filename> - save a copy of the file to the specified name (keep editing original)
+Vjj:w <filename> - save the current line, and the two below it to file
 :wq - save and exit (aka ZZ)
 :q! - exit without saving
+<Tab> - auto-complete command
+<C-d> - list possible completions
 
 Tabbed editing
 ==============
