@@ -146,6 +146,12 @@ vimrc leader key mappings
 =========================
 <Leader>i - toggle ignore case
 <Leader>h - remove highlighting
+<Leader>l - toggle line highlighting
+<Leader>nn - toggle absolute (normal) line numbering
+<Leader>nr - toggle relative line numbering
+<Leader>m - save the current file and run Make
+<Leader>j - next quickfix item
+<Leader>k - previous quickfix item
 
 References
 ==========

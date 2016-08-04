@@ -76,6 +76,20 @@ nnoremap <Leader>nr :set rnu!<CR>
 " Map the command to toggle cursor line highlighting
 nnoremap <Leader>l :set cul!<CR>
 
+" Define a custom Make command, which only outputs errors
+:command -nargs=* Make make -s | cwindow
+
+" Might be able to make Make quiet with something like this:
+" command! -nargs=1 Silent | execute ':silent !'.<q-args> | execute ':redraw!'
+" Or possibly just by appending <CR> or maybe :echo<CR>
+
+" Map the custom Make command
+nnoremap <Leader>m :w<CR>:Make<CR>
+
+" Commands for paging through errors
+nnoremap <Leader>j :cn<CR>
+nnoremap <Leader>k :cp<CR>
+
 " Search up throught the parent directories until we find a tags file
 set tags=tags;/
 
