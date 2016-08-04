@@ -10,6 +10,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
+Bundle 'jceb/vim-hier'
 
 " Now that vundle is loaded, we can go back to normal
 filetype on
@@ -76,15 +77,16 @@ nnoremap <Leader>nr :set rnu!<CR>
 " Map the command to toggle cursor line highlighting
 nnoremap <Leader>l :set cul!<CR>
 
+" A bunch of old build stuff that might be useful
 " Define a custom Make command, which only outputs errors
-:command -nargs=* Make make -s | cwindow
-
+" :command -nargs=* Make make -s | cwindow
 " Might be able to make Make quiet with something like this:
 " command! -nargs=1 Silent | execute ':silent !'.<q-args> | execute ':redraw!'
 " Or possibly just by appending <CR> or maybe :echo<CR>
+" nnoremap <Leader>m :w<CR>:Make<CR>
 
 " Map the custom Make command
-nnoremap <Leader>m :w<CR>:Make<CR>
+nnoremap <Leader>m :w<CR>:silent! make -s\|:redraw!\|cw<CR>
 
 " Commands for paging through errors
 nnoremap <Leader>j :cn<CR>
@@ -92,4 +94,9 @@ nnoremap <Leader>k :cp<CR>
 
 " Search up throught the parent directories until we find a tags file
 set tags=tags;/
+
+" Use red foreground text for highlighting errors
+hi clear SpellBad
+hi SpellBad ctermfg=red
+" hi SpellBad cterm=underline ctermfg=red 
 
