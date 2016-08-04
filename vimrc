@@ -67,6 +67,9 @@ nnoremap <Leader>h :nohlsearch<CR>
 " Map the command for toggling ignore case (and printing current setting)
 nnoremap <Leader>i :set ic! ic?<CR>
 
+" Map the command to toggle line numbers on and off
+nnoremap <Leader>n :set nu!<CR>
+
 " Search up throught the parent directories until we find a tags file
 set tags=tags;/
 
