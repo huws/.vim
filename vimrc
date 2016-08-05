@@ -88,8 +88,9 @@ nnoremap <Leader>p :set paste! paste?<CR>
 " Or possibly just by appending <CR> or maybe :echo<CR>
 " nnoremap <Leader>m :w<CR>:Make<CR>
 
-" Map the custom Make command
+" Map the custom make and make test commands
 nnoremap <Leader>m :w<CR>:silent! make -s\|:redraw!\|cw<CR>
+nnoremap <Leader>t :w<CR>:silent! make -s test\|:redraw!\|cw<CR>
 
 " Commands for paging through errors
 nnoremap <Leader>j :cn<CR>
