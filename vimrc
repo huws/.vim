@@ -77,6 +77,9 @@ nnoremap <Leader>nr :set rnu!<CR>
 " Map the command to toggle cursor line highlighting
 nnoremap <Leader>l :set cul!<CR>
 
+" Map the command to toggle paste mode
+nnoremap <Leader>p :set paste! paste?<CR>
+
 " A bunch of old build stuff that might be useful
 " Define a custom Make command, which only outputs errors
 " :command -nargs=* Make make -s | cwindow
