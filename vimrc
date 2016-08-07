@@ -96,6 +96,9 @@ nnoremap <Leader>t :w<CR>:silent! make -s test\|:redraw!\|cw<CR>
 nnoremap <Leader>j :cn<CR>
 nnoremap <Leader>k :cp<CR>
 
+" Map a write command
+nnoremap <Leader>w :w<CR>
+
 " Search up throught the parent directories until we find a tags file
 set tags=tags;/
 
