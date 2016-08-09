@@ -55,9 +55,8 @@ set expandtab
 " Set up a line-length ruler at 79 characters
 :set colorcolumn=79
 
-" Turn ignore case on/off
-" set ic
-" set noic
+" Use // style comments for C and Java
+autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
 
 " Use search highlighting and incremental search
 set hls is
@@ -96,10 +95,14 @@ nnoremap <Leader>t :w<CR>:silent! make -s test\|:redraw!\|cw<CR>
 nnoremap <Leader>j :cn<CR>
 nnoremap <Leader>k :cp<CR>
 
+" Commands for opening/closing quickfix window
+nnoremap <Leader>cc :cwindow<CR>
+nnoremap <Leader>cx :cclose<CR>
+
 " Map a write command
 nnoremap <Leader>w :w<CR>
 
-" Search up throught the parent directories until we find a tags file
+" Search up through the parent directories until we find a tags file
 set tags=tags;/
 
 " Use red foreground text for highlighting errors
