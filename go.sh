@@ -35,6 +35,7 @@ grep "source ~/.vim/bashrc" ~/.bashrc > /dev/null
 if [ $? -ne 0 ]
 then
   echo "Modifying .bashrc..."
+  sudo chown $USER:$USER ~/.bashrc
   echo "source ~/.vim/bashrc" >> ~/.bashrc
 else
   echo "Already updated .bashrc"
