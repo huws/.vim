@@ -50,5 +50,9 @@ else
   echo "vundle already installed"
 fi
 
+# Install plugins
+echo "Installing plugins..."
+vim -c VundleInstall -c quitall
+
 echo "DONE!"
 
