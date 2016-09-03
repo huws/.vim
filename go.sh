@@ -11,7 +11,7 @@ fi
 
 # Install git, vim and ctags
 echo "Installing packages..."
-sudo apt-get install -y git vim ctags > /dev/null
+sudo apt-get install -y git vim ctags gdb > /dev/null
 
 if [ $? -ne 0 ]
 then
