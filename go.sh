@@ -41,7 +41,7 @@ else
 fi
 
 # Install vundle
-if [ ! -d "~/.vim/bundle/vundle" ]
+if [ ! -d ~/.vim/bundle/vundle ]
 then
   echo "Installing vundle..."
   git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
