@@ -11,6 +11,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'jceb/vim-hier'
+Bundle 'vim-scripts/Conque-GDB'
 
 " Now that vundle is loaded, we can go back to normal
 filetype on
