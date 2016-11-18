@@ -65,6 +65,9 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4
 " Use search highlighting and incremental search
 set hls is
 
+" Always show tabs at the top of files, even if there is only one tab
+set showtabline=2
+
 " Map the command for removing search highlighting
 nnoremap <Leader>h :nohlsearch<CR>
 
