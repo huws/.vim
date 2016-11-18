@@ -28,5 +28,5 @@ curl pass a user agent that satisfies tinyurl.com:
 Set up (or refresh) ctags by running:
 
     cd <project directory>
-    ctags --recurse --exclude=.git
+    ctags --recurse=yes --exclude=.git
 

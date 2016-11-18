@@ -48,7 +48,7 @@ syntax on
 " Use UTF-8 encoding
 set encoding=utf-8
 
-" Set sane tab behaviour
+" Set sane default tab behaviour
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -58,6 +58,9 @@ set expandtab
 
 " Use // style comments for C and Java
 autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
+
+" Set special-case tab behaviour for Python files
+autocmd FileType python setlocal tabstop=4 shiftwidth=4
 
 " Use search highlighting and incremental search
 set hls is
