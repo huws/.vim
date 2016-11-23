@@ -22,7 +22,7 @@ filetype on
 " Use custom colour scheme
 colorscheme elflord
 
-" Use jj and jk  as an alternative to Escape to exit insert mode 
+" Use jj and jk  as an alternative to Escape to exit insert mode
 inoremap jj <ESC>
 inoremap jk <ESC>
 
@@ -56,11 +56,21 @@ set expandtab
 " Set up a line-length ruler at 79 characters
 :set colorcolumn=79
 
+" Function for trimming whitespace
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+
 " Use // style comments for C and Java
 autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
 
 " Set special-case tab behaviour for Python files
 autocmd FileType python setlocal tabstop=4 shiftwidth=4
+
+" Trim trailing whitespace on save
+autocmd BufWritePre * :call TrimWhitespace()
 
 " Use search highlighting and incremental search
 set hls is
@@ -115,5 +125,5 @@ set tags=tags;/
 " Use red foreground text for highlighting errors
 hi clear SpellBad
 hi SpellBad ctermfg=red
-" hi SpellBad cterm=underline ctermfg=red 
+" hi SpellBad cterm=underline ctermfg=red
 

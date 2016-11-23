@@ -16,7 +16,7 @@ To install the plugins, launch `vim` and execute the `:BundleInstall` command.
 You will need to exit and restart `vim` before all plugins are available.
 
 ## Automatic install from tinyurl.com
-There is a much more memorable URL for accessing the go.sh script via 
+There is a much more memorable URL for accessing the go.sh script via
 tinyurl.com.  Sadly, tinyurl.com returns 403 Forbidden responses to any client
 that identifies itself as "curl".  A tedious extra option is required to make
 curl pass a user agent that satisfies tinyurl.com:
