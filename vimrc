@@ -127,3 +127,6 @@ hi clear SpellBad
 hi SpellBad ctermfg=red
 " hi SpellBad cterm=underline ctermfg=red
 
+" Use %% as a shortcut for the directory of the current buffer (e.g. for :tabe)
+cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
