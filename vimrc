@@ -130,3 +130,7 @@ hi SpellBad ctermfg=red
 " Use %% as a shortcut for the directory of the current buffer (e.g. for :tabe)
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Better filename completion on opening
+set wildmode=longest,list,full
+set wildmenu
+
