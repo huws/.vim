@@ -12,6 +12,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'jceb/vim-hier'
 Bundle 'vim-scripts/Conque-GDB'
+Bundle 'rust-lang/rust.vim'
 
 " Now that vundle is loaded, we can go back to normal
 filetype on
