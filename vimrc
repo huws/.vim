@@ -11,7 +11,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'jceb/vim-hier'
-Bundle 'vim-scripts/Conque-GDB'
+" Bundle 'vim-scripts/Conque-GDB'
 Bundle 'rust-lang/rust.vim'
 
 " Now that vundle is loaded, we can go back to normal
@@ -28,14 +28,14 @@ inoremap jj <ESC>
 inoremap jk <ESC>
 
 " Turn off those pesky cursor keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
+" inoremap <Up> <Nop>
+" inoremap <Down> <Nop>
+" inoremap <Left> <Nop>
+" inoremap <Right> <Nop>
 
 " Use Space as an alternative to \ for the leader key
 let mapleader = "\<Space>"
