@@ -8,10 +8,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'jceb/vim-hier'
 " Bundle 'vim-scripts/Conque-GDB'
+" Bundle 'vim-syntastic/syntastic'
 Bundle 'rust-lang/rust.vim'
 
 " Now that vundle is loaded, we can go back to normal
@@ -135,3 +137,15 @@ cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 set wildmode=longest,list,full
 set wildmenu
 
+" Syntastic config
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_rust_checkers = ['rustc']
+" let g:syntastic_rust_rustc_args = "-Z parse-only"
+" let g:syntastic_cpp_compiler = ""
+" let g:syntastic_cpp_compiler_options = "-std=c++11 -fsyntax-only"
