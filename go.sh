@@ -3,17 +3,29 @@
 # Check whether we have access to apt-get
 sudo which apt-get > /dev/null
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then
-  echo "Can't auto-install on system without apt-get"
-  exit 1
+  # Install packages via apt-get
+  echo "Installing packages with apt-get..."
+  sudo apt-get install -y git vim ctags gdb > /dev/null
+  install_rc=$?
+else
+  # Check whether we have access to yum
+  sudo which yum > /dev/null
+
+  if [ $? -eq 0 ]
+  then
+    # Install packages via yum
+    echo "Installing packages with yum..."
+    sudo yum -y install git vim ctags gdb > /dev/null
+    install_rc=$?
+  else
+    echo "Can't auto-install on system without apt-get or yum"
+    exit 1
+  fi
 fi
 
-# Install git, vim and ctags
-echo "Installing packages..."
-sudo apt-get install -y git vim ctags gdb > /dev/null
-
-if [ $? -ne 0 ]
+if [ $install_rc -ne 0 ]
 then
   echo "ERROR: Failed to install required packages"
   exit 2
