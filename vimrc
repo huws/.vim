@@ -149,3 +149,11 @@ set wildmenu
 " let g:syntastic_rust_rustc_args = "-Z parse-only"
 " let g:syntastic_cpp_compiler = ""
 " let g:syntastic_cpp_compiler_options = "-std=c++11 -fsyntax-only"
+
+" Only enable when running on Windows under WSL
+if !empty(glob("/mnt/c"))
+    " copy (write) highlighted text to .vimbuffer
+    vmap <Leader>c y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+    " paste from buffer
+    map <Leader>v :r ~/.vimbuffer<CR>
+endif
