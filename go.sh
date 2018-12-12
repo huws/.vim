@@ -53,6 +53,21 @@ else
   echo "Already updated .bashrc"
 fi
 
+# Move off any old .vimrc file
+cd ~
+if [ -f ".vimrc" ]
+then
+  TIMESTAMP=`date +%Y%m%d.%H%M%S`
+  VIMRC_BACKUP=.vimrc.$TIMESTAMP
+  echo "Back-up old .vimrc to $VIMRC_BACKUP"
+  mv .vimrc $VIMRC_BACKUP
+  if [ $? -ne 0 ]
+  then
+    echo "ERROR: Failed to back-up old .vimrc"
+    exit 3
+  fi
+fi
+
 # Install vundle
 if [ ! -d ~/.vim/bundle/vundle ]
 then
