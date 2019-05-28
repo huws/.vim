@@ -39,6 +39,12 @@ inoremap jk <ESC>
 " inoremap <Left> <Nop>
 " inoremap <Right> <Nop>
 
+" Use . to apply last edit to each line in selection
+vnoremap . :normal .<CR>
+
+" Use ` to apply the last macro to each line in selection
+vnoremap ` :normal @@<CR>
+
 " Use Space as an alternative to \ for the leader key
 let mapleader = "\<Space>"
 
