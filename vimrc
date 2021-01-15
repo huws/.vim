@@ -163,3 +163,12 @@ if !empty(glob("/mnt/c"))
     " paste from buffer
     map <Leader>v :r ~/.vimbuffer<CR>
 endif
+
+" For Windows context menu integration, run regedit and add the key:
+"   HKEY_CLASSES_ROOT -> * -> shell -> Open with vim -> command
+" With Data set to:
+"   wsl vim "$(echo "%V" | sed 's#\\#/#g' | sed 's#^C:#/mnt/c#')"
+
+" For keyboard shortcut, create a shortcut on the desktop with:
+"   Target wsl.exe vim -c "cd /mnt/c/hjs/temp"
+"   Shortcut key Ctrl+Shift+V
