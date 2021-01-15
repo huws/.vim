@@ -36,7 +36,7 @@ cd ~
 if [ ! -d ".vim" ]
 then
   echo "Cloning .vim directory"
-  git clone http://github.com/huws/.vim
+  git clone git@github.com:huws/.vim.git
 else
   echo ".vim directory already exists"
 fi
