@@ -9,7 +9,7 @@ These vim settings can be installed by running:
 
     sudo apt-get install -y git
     cd ~
-    git clone git@github.com:huws/.vim.git
+    git clone http://github.com/huws/.vim
     .vim/go.sh
 
 To install the plugins, launch `vim` and execute the `:BundleInstall` command.
